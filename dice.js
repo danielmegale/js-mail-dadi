@@ -12,7 +12,6 @@ diceButton.addEventListener('click', function(){
     let pcDice =Math.floor(Math.random()* 6)+1
     console.log(pcDice)
     pcResult.innerText='Il tiro del pc: '+ pcDice
-    totalResult.innerText='You Lose'
     if(userDice> pcDice){
         totalResult.innerText='You Win'
     }else if(userDice<pcDice){
