@@ -15,5 +15,9 @@ diceButton.addEventListener('click', function(){
     totalResult.innerText='You Lose'
     if(userDice> pcDice){
         totalResult.innerText='You Win'
+    }else if(userDice<pcDice){
+        totalResult.innerText='You Lose'
+    }else if(userDice=pcDice){
+        totalResult.innerText='Draw'
     }
 })
